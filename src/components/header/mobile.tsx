@@ -1,32 +1,20 @@
 "use client";
 
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { dongnamgu, seobukgu } from "../../app/dong-list";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
-export default function Mobile() {
+type MobileProps = {
+    loggedIn: boolean;
+};
+
+export default function Mobile({
+    loggedIn,
+}: MobileProps) {
     const [isOpen, setIsOpen] = useState(false);
-    const [subOpen, setSubOpen] = useState<boolean[]>(
-        Array(2).fill(false));
-    const [heights, setHeights] = useState<number[]>(
-        Array(2).fill(0));
-
-    const reset = () => {
-        setIsOpen(false);
-        setSubOpen(Array(2).fill(false));
-        setHeights(Array(2).fill(0));
-    };
-
-    const toggleSubMenu = (index: number, list: any) => {
-        const newSubOpen = [...subOpen];
-        newSubOpen[index] = !newSubOpen[index];
-        setSubOpen(newSubOpen);
-
-        const newHeights = [...heights];
-        newHeights[index] = newSubOpen[index] ? list.length * 56 : 0;
-        setHeights(newHeights);
-    };
+    const reset = () => setIsOpen(false);
 
     return (
         <div>
@@ -44,49 +32,75 @@ export default function Mobile() {
                 <div className="hidden-scrollbar
                 fixed inset-0 top-[72px] z-50 bg-white
             overflow-y-scroll overscroll-y-none">
-                <div className="absolute" style={{
-                    width: "1px",
-                    height: "calc(100% + 2px)",
-                }} />
+                    <div className="absolute" style={{
+                        width: "1px",
+                        height: "calc(100% + 2px)",
+                    }} />
                     <nav>
                         <ul>
                             <li>
                                 <MobileLink
-                                href="/"
-                                onClick={reset}>
-                                    천안 출장 마사지
+                                    href="/"
+                                    onClick={reset}>
+                                    천안 출장마사지
                                 </MobileLink>
                             </li>
 
                             <li>
                                 <MobileLink
-                                href="/asan"
-                                onClick={reset}>
-                                    아산 출장 마사지
+                                    href="/asan"
+                                    onClick={reset}>
+                                    아산 출장마사지
                                 </MobileLink>
                             </li>
 
                             <li>
                                 <MobileLink
-                                href="/cheonan-dongnamgu"
-                                onClick={reset}>
-                                    천안 동남구 출장 마사지
+                                    href="/cheonan-dongnamgu"
+                                    onClick={reset}>
+                                    천안 동남구 출장마사지
                                 </MobileLink>
                             </li>
 
                             <li>
                                 <MobileLink
-                                href="/cheonan-seobukgu"
-                                onClick={reset}>
-                                    천안 서북구 출장 마사지
+                                    href="/cheonan-seobukgu"
+                                    onClick={reset}>
+                                    천안 서북구 출장마사지
                                 </MobileLink>
                             </li>
 
                             <li>
                                 <MobileLink
-                                href="/courses"
-                                onClick={reset}>
+                                    href="/courses"
+                                    onClick={reset}>
                                     가격표
+                                </MobileLink>
+                            </li>
+
+                            <li>
+                                <MobileLink
+                                    href="/reviews"
+                                    onClick={reset}>
+                                    이용 후기
+                                </MobileLink>
+                            </li>
+
+                            {loggedIn && (
+                                <li>
+                                    <MobileLink
+                                        href="/reviews/manage"
+                                        onClick={reset}>
+                                        후기 관리
+                                    </MobileLink>
+                                </li>
+                            )}
+
+                            <li>
+                                <MobileLink
+                                    href="/login"
+                                    onClick={reset}>
+                                    {loggedIn ? "로그아웃" : "로그인"}
                                 </MobileLink>
                             </li>
                         </ul>
@@ -106,10 +120,20 @@ function MobileLink({
     children: React.ReactNode;
     onClick: () => void;
 }) {
+    const router = useRouter();
+
     return (
         <Link
             href={href}
-            onClick={onClick}
+            onClick={(e) => {
+                if (children === "로그아웃") {
+                    e.preventDefault();
+                    document.cookie = 'token=; Max-Age=0; path=/;';
+                    router.push("/");
+                    router.refresh();
+                }
+                onClick();
+            }}
             className="block w-full p-4
              hover:bg-neutral-100 cursor-pointer">
             {children}

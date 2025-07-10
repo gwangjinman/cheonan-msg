@@ -7,8 +7,17 @@ import {
     NavigationMenuList
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
+import { Button } from "../ui/button";
+import { redirect, usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
-export default function Desktop() {
+type DesktopProps = {
+    loggedIn: boolean;
+};
+
+export default function Desktop({
+    loggedIn,
+}: DesktopProps) {
     return (
         <NavigationMenu>
             <NavigationMenuList>
@@ -18,7 +27,7 @@ export default function Desktop() {
                         <Link
                             href="/"
                             className="font-medium px-4 hover:bg-gray-200">
-                            천안 출장 마사지
+                            천안 출장마사지
                         </Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
@@ -26,7 +35,7 @@ export default function Desktop() {
                 <NavigationMenuItem>
                     <NavigationLink
                         href="/asan">
-                        아산 출장 마사지
+                        아산 출장마사지
                     </NavigationLink>
                 </NavigationMenuItem>
 
@@ -50,6 +59,29 @@ export default function Desktop() {
                         가격표
                     </NavigationLink>
                 </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                    <NavigationLink
+                        href="/reviews">
+                        이용 후기
+                    </NavigationLink>
+                </NavigationMenuItem>
+
+                {loggedIn && (
+                    <NavigationMenuItem>
+                        <NavigationLink
+                            href="/reviews/manage">
+                            후기 관리
+                        </NavigationLink>
+                    </NavigationMenuItem>
+                )}
+
+                <NavigationMenuItem>
+                    <NavigationLink
+                        href="/login">
+                        {loggedIn ? "로그아웃" : "로그인"}
+                    </NavigationLink>
+                </NavigationMenuItem>
             </NavigationMenuList>
         </NavigationMenu>
     )
@@ -62,11 +94,20 @@ function NavigationLink({
     href: string;
     children: React.ReactNode;
 }) {
+    const router = useRouter();
     return (
         <NavigationMenuLink
             asChild>
             <Link
                 href={href}
+                onClick={(e) => {
+                    if (children === "로그아웃") {
+                        e.preventDefault();
+                        document.cookie = 'token=; Max-Age=0; path=/;';
+                        router.push("/");
+                        router.refresh();
+                    }
+                }}
                 className="font-medium px-4 hover:bg-gray-200">
                 {children}
             </Link>

@@ -1,18 +1,22 @@
-"use client";
-
-import Link from "next/link";
 import Desktop from "./desktop";
 import Mobile from "./mobile";
 
-export default function Header() {
+type HeaderProps = {
+    loggedIn: boolean;
+};
+
+export default function Header({
+    loggedIn,
+}: HeaderProps) {
     return (
         <div className="h-18 flex items-center justify-end md:justify-center">
             <div className="hidden md:block">
-                <Desktop />
+                <Desktop
+                    loggedIn={loggedIn} />
             </div>
-
             <div className="md:hidden">
-                <Mobile />
+                <Mobile
+                    loggedIn={loggedIn} />
             </div>
         </div>
     );

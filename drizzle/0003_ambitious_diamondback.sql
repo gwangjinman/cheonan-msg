@@ -1,0 +1,1 @@
+ALTER TABLE "massageReviewRequestResults" ALTER COLUMN "requestedAt" SET DEFAULT now();
