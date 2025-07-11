@@ -1,12 +1,18 @@
 import MapClient from "@/components/map-client";
 import CourseCard from "./course-card";
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "천안/아산 전지역 출장마사지 코스 가격표 안내",
+    description: "천안 출장마사지, 아산 출장마사지, 천안 아로마 마사지, 천안 타이 마사지, 아산 아로마 마사지, 아산 타이 마사지, 천안 24시 마사지, 아산 24시 마사지, 천안 홈타이, 아산 홈타이, 천안 스웨디시, 아산 스웨디시, 천안 마사지 가격, 아산 마사지 가격, 천안 출장 홈케어, 아산 출장 홈케어, 천안 남성전용 마사지, 아산 남성전용 마사지",
+};
 
 export default function CoursesPage() {
     return (
         <div className="py-20 flex flex-col items-center space-y-16">
             <div className="space-y-4 text-center text-white">
                 <h1 className="text-4xl font-bold">
-                    프리미엄 천안 마사지 코스
+                    프리미엄 천안 출장마사지 코스
                 </h1>
                 <div className="text-xl space-y-5">
                 <p>
@@ -35,7 +41,7 @@ export default function CoursesPage() {
 
             <div className="w-full max-w-4xl">
                 <MapClient
-                    mapTitle="천안출장마사지"
+                    mapTitle="천안 출장마사지"
                     lat={36.81377410888672}
                     lng={127.14159393310547} />
             </div>

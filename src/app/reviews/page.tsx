@@ -3,6 +3,12 @@ import ReviewForm from "./review-form";
 import ReviewList from "./review-list";
 import { getReviews } from "./actions";
 import { cookies } from "next/headers";
+import { Metadata } from "next/types";
+
+export const metadata: Metadata = {
+    title: "천안/아산 No.1 출장마사지 후기 모음 | 천안 홈케어 | 아산 홈케어 | 100% 후불제",
+    description: "천안 출장마사지, 아산 출장마사지, 천안 아로마 마사지, 천안 타이 마사지, 아산 아로마 마사지, 아산 타이 마사지, 천안 24시 마사지, 아산 24시 마사지, 천안 홈타이, 아산 홈타이, 천안 스웨디시, 아산 스웨디시, 천안 마사지 가격, 아산 마사지 가격, 천안 출장 홈케어, 아산 출장 홈케어, 천안 남성전용 마사지, 아산 남성전용 마사지, 20대 관리사",
+};
 
 type ReviewPageProps = {
     searchParams: Promise<{

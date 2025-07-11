@@ -18,7 +18,10 @@ export async function loginAction(
     const password = formData.get("password");
 
     if (id !== process.env.ID || password !== process.env.PASSWORD) {
-        return { success: false, message: "꺼져" };
+        return {
+            success: false,
+            message: "아이디 또는 비밀번호가 일치하지 않습니다.",
+        };
     }
 
     const payload = { id };

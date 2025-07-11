@@ -4,6 +4,11 @@ import {
     getReviewRequests,
 } from "../actions";
 import Common from "./common";
+import { Metadata } from "next/types";
+
+export const metadata: Metadata = {
+    title: "리뷰 관리",
+};
 
 export default async function ReviewsManagePage() {
     const payload = await verifyJWT();

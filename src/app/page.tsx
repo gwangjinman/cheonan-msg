@@ -1,6 +1,12 @@
 import Head from "@/components/head";
 import MapClient from "@/components/map-client";
 import Image from "next/image";
+import { Metadata } from "next/types";
+
+export const metadata: Metadata = {
+    title: "천안 전지역 No.1 출장마사지 | 100% 후불제 | 20대 관리사 상시 대기 | 천안 홈케어",
+    description: "천안 출장마사지, 아산 출장마사지, 천안 아로마 마사지, 천안 타이 마사지, 아산 아로마 마사지, 아산 타이 마사지, 천안 24시 마사지, 아산 24시 마사지, 천안 홈타이, 아산 홈타이, 천안 스웨디시, 아산 스웨디시, 천안 마사지 가격, 아산 마사지 가격, 천안 출장 홈케어, 아산 출장 홈케어, 천안 남성전용 마사지, 아산 남성전용 마사지, 20대 관리사",
+};
 
 export default function Home() {
     return (
@@ -9,7 +15,7 @@ export default function Home() {
                 <section className="space-y-5">
                     <h1 className="text-4xl font-bold mb-4 text-white">
                         천안 출장마사지 - 품격 있는 힐링, 집에서 만나는 편안함<br />
-                        천안출장안마 NO.1 천안 출장 100% 후불제
+                        천안 출장안마 NO.1 천안 출장 100% 후불제
                     </h1>
 
                     <a href=""
@@ -58,7 +64,7 @@ export default function Home() {
 
                 <section>
                     <MapClient
-                    mapTitle="천안출장마사지"
+                    mapTitle="천안 출장마사지"
                     lat={36.81377410888672}
                     lng={127.14159393310547} />
                 </section>
