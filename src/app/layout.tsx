@@ -18,6 +18,7 @@ export default async function RootLayout({
     return (
         <html lang="ko">
             <head>
+                <meta name="naver-site-verification" content="25bfde5099d48c1758ca074c8fbae9493460ab71" />
                 <link rel="icon" href="/favicon-16x16.png" sizes="16x16" />
                 <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
                 <link rel="icon" href="/android-chrome-192x192.png" sizes="192x192" />
