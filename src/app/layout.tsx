@@ -28,7 +28,7 @@ export default async function RootLayout({
 
             <body className={`${noto.className} antialiased bg-[#010203]`}>
                 <div className="min-h-screen flex flex-col">
-                    <header className="bg-neutral-100 sticky top-0 z-50">
+                    <header className="bg-neutral-100 sticky top-0 z-50 abc">
                         <Header
                         loggedIn={Boolean(token)} />
                     </header>
