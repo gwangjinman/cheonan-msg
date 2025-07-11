@@ -17,6 +17,14 @@ export default async function RootLayout({
 
     return (
         <html lang="ko">
+            <head>
+                <link rel="icon" href="/favicon-16x16.png" sizes="16x16" />
+                <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
+                <link rel="icon" href="/android-chrome-192x192.png" sizes="192x192" />
+                <link rel="icon" href="/android-chrome-512x512.png" sizes="512x512" />
+                <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+            </head>
+            
             <body className={`${noto.className} antialiased bg-[#010203]`}>
                 <div className="min-h-screen flex flex-col">
                     <header className="bg-neutral-100 sticky top-0 z-50">
