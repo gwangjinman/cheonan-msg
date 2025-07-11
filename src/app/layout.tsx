@@ -32,7 +32,7 @@ export default async function RootLayout({
                         loggedIn={Boolean(token)} />
                     </header>
 
-                    <main className="grow w-full mx-auto max-w-6xl px-4 d">
+                    <main className="grow w-full mx-auto max-w-6xl px-4">
                         {children}
                     </main>
 
