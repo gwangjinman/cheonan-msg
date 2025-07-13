@@ -28,7 +28,7 @@ export default async function RootLayout({
                 <div className="min-h-screen flex flex-col">
                     <header className="bg-neutral-100 sticky top-0 z-50">
                         <Header
-                        loggedIn={Boolean(token)} />
+                            loggedIn={Boolean(token)} />
                     </header>
 
                     <main className="grow w-full mx-auto max-w-6xl px-4">
@@ -45,7 +45,7 @@ export default async function RootLayout({
                             </div>
                         </a>
                         <a target="_blank" rel="noopener noreferrer"
-                        href="https://t.me/opoo111">
+                            href="https://t.me/opoo111">
                             <div className="p-3 bg-blue-800 rounded-lg
                             hover:bg-blue-700 transition-colors">
                                 텔레그램 예약

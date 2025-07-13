@@ -23,10 +23,10 @@ export default function CourseCard({
 }: CourseCardProps) {
     return (
         <Card
-        className="bg-indigo-300 py-6 px-4 border-none">
+            className="bg-indigo-300 py-6 px-4 border-none">
             <CardHeader>
                 <CardTitle
-                className="text-2xl text-white font-bold text-center">
+                    className="text-2xl text-white font-bold text-center">
                     {title} 코스
                 </CardTitle>
             </CardHeader>
@@ -35,17 +35,17 @@ export default function CourseCard({
                 <div className="flex flex-col items-center gap-6">
                     {Object.entries(course).map(([courseName, price]) => (
                         <div key={courseName}
-                        className="flex items-center text-lg gap-2
+                            className="flex items-center text-lg gap-2
                         text-gray-700 font-bold">
                             <div>
                                 {courseName}
                             </div>
                             <div>
                                 <ArrowRight
-                                className="h-4 w-4" />
+                                    className="h-4 w-4" />
                             </div>
                             <div className="text-blue-600">
-                                    {price}
+                                {price}
                             </div>
                         </div>
                     ))}
@@ -54,8 +54,11 @@ export default function CourseCard({
 
             <CardFooter>
                 <Button
-                className="grow">
-                    예약하기
+                    className="grow"
+                    asChild>
+                    <a href="tel:+821021832567">
+                        예약하기
+                    </a>
                 </Button>
             </CardFooter>
         </Card>
