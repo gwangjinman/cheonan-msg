@@ -1,9 +1,7 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import { Noto_Sans_KR } from "next/font/google";
-import Header from "../components/header/header";
 import { cookies } from "next/headers";
+import Header from "../components/header/header";
+import "./globals.css";
 
 const noto = Noto_Sans_KR({ subsets: ["latin"] });
 
@@ -28,7 +26,7 @@ export default async function RootLayout({
 
             <body className={`${noto.className} antialiased bg-[#010203]`}>
                 <div className="min-h-screen flex flex-col">
-                    <header className="bg-neutral-100 sticky top-0 z-50 abc">
+                    <header className="bg-neutral-100 sticky top-0 z-50">
                         <Header
                         loggedIn={Boolean(token)} />
                     </header>
@@ -40,19 +38,20 @@ export default async function RootLayout({
                     <footer className="py-5 border-t border-gray-800
                     flex items-center justify-center gap-5 text-white
                     sticky bottom-0 w-full bg-gray-900">
-                        <a href="">
+                        <a href="#">
                             <div className="p-3 bg-blue-800 rounded-lg
                             hover:bg-blue-700 transition-colors">
-                                카카오톡 예약
+                                카톡 아이디: opoo111
                             </div>
                         </a>
-                        <a href="">
+                        <a target="_blank" rel="noopener noreferrer"
+                        href="https://t.me/opoo111">
                             <div className="p-3 bg-blue-800 rounded-lg
                             hover:bg-blue-700 transition-colors">
                                 텔레그램 예약
                             </div>
                         </a>
-                        <a href="">
+                        <a href="tel:+821021832567">
                             <div className="p-3 bg-blue-800 rounded-lg
                             hover:bg-blue-700 transition-colors">
                                 전화 예약

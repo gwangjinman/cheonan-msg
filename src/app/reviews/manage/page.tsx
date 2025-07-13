@@ -7,7 +7,8 @@ import Common from "./common";
 import { Metadata } from "next/types";
 
 export const metadata: Metadata = {
-    title: "리뷰 관리",
+    title: "런투유 출장마사지 리뷰 관리",
+    description: "런투유 출장마사지 고객들의 리얼한 후기와 요청을 확인해 보세요.",
 };
 
 export default async function ReviewsManagePage() {

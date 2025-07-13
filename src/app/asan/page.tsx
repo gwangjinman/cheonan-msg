@@ -4,8 +4,8 @@ import Image from "next/image";
 import { Metadata } from "next/types";
 
 export const metadata: Metadata = {
-    title: "아산 전지역 No.1 출장마사지 | 100% 후불제 | 20대 관리사 상시 대기 | 아산 홈케어",
-    description: "천안 출장마사지, 아산 출장마사지, 천안 아로마 마사지, 천안 타이 마사지, 아산 아로마 마사지, 아산 타이 마사지, 천안 24시 마사지, 아산 24시 마사지, 천안 홈타이, 아산 홈타이, 천안 스웨디시, 아산 스웨디시, 천안 마사지 가격, 아산 마사지 가격, 천안 출장 홈케어, 아산 출장 홈케어, 천안 남성전용 마사지, 아산 남성전용 마사지, 20대 관리사",
+    title: "런투유출장마사지 | 아산출장마사지 | 100% 후불제 | 20대 관리사 상시 대기 | 아산홈케어",
+    description: "런투유 출장마사지는 아산 전지역(온천, 신창, 용화, 배방, 탕정 등)에서 24시간 운영되는 프리미엄 홈타이·출장마사지 서비스입니다. 아산출장마사지, 아산홈타이, 아산출장안마, 아산아로마홈케어, 아산힐링케어 등의 서비스를 제공하는 아산 대표 출장마사지 브랜드이며, 20대 전문 관리사들이 고객 맞춤형 케어를 제공합니다.",
 };
 
 export default function AsanPage() {
@@ -14,22 +14,36 @@ export default function AsanPage() {
             <article className="space-y-32 text-center py-20">
                 <section className="space-y-5">
                     <h1 className="text-4xl font-bold mb-4 text-white">
-                        <span>아산 출장마사지 ㅣ 아산 24시간 출장 안마 | 아산콜걸</span><br />
-                        <span>아산 국내 20대 | 100% 후불제</span>
+                        <span>런투유출장마사지 | 아산출장마사지 ㅣ 아산24시간출장안마</span><br />
+                        <span>아산 국내 20대 관리사 | 100% 후불제</span>
                     </h1>
 
-                    <a href=""
+                    <a href="tel:+821021832567"
                         className="flex items-center justify-center">
-                        <div className="h-56 w-56 bg-pink-400">
-
-                        </div>
+                        <Image
+                            src="/image2.png"
+                            width={400}
+                            height={400}
+                            alt="런투유출장마사지 소개 이미지" />
                     </a>
+
                     <div className="text-white text-center">
                         바쁜 하루, 쌓이는 피로..<br />
                         굳이 이동하지 않아도, 아산 어디서든 편하게 받는 고품격 마사지.<br />
-                        24시간 연중무휴로 아산 전 지역 어디든지 출장 방문 가능하며,<br />
+                        런투유출장마사지는 24시간 연중무휴로,<br />
+                        아산 전 지역 어디든지 출장 방문 가능하며,<br />
                         전문성 있는 20대 관리사들이 맞춤형 케어를 제공합니다.
                     </div>
+
+                    <a href="/courses"
+                        className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gray-900 hover:bg-pink-600 transition-colors duration-200 text-white font-semibold text-lg shadow-lg border border-pink-500"
+                        style={{ boxShadow: "0 4px 24px rgba(255, 0, 128, 0.15)" }}
+                    >
+                        <span>코스 가격표 안내</span>
+                        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" className="ml-1">
+                            <path d="M13 5l7 7-7 7M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </a>
                 </section>
 
                 {Object.keys(descriptions).map((key) => (
@@ -45,12 +59,12 @@ export default function AsanPage() {
                 ))}
 
                 <section className="bg-gray-900 rounded-xl py-12 px-6 max-w-3xl mx-auto shadow-lg">
-                    <h2 className="text-3xl font-bold text-white mb-6">아산 출장마사지 이용 후기</h2>
+                    <h2 className="text-3xl font-bold text-white mb-6">런투유출장마사지 리얼 후기</h2>
                     <div className="space-y-6">
                         <div className="bg-gray-800 rounded-lg p-5 text-white shadow">
                             <div className="flex items-center mb-2">
                                 <span className="font-semibold mr-2">김**</span>
-                                <span className="text-sm text-gray-400">2025.06</span>
+                                <span className="text-sm text-gray-400">2025.07</span>
                             </div>
                             <p>
                                 출장 중 호텔에서 받았는데, 정말 피로가 싹 풀렸어요.<br />
@@ -60,7 +74,7 @@ export default function AsanPage() {
                         <div className="bg-gray-800 rounded-lg p-5 text-white shadow">
                             <div className="flex items-center mb-2">
                                 <span className="font-semibold mr-2">박**</span>
-                                <span className="text-sm text-gray-400">2024.06</span>
+                                <span className="text-sm text-gray-400">2025.07</span>
                             </div>
                             <p>
                                 집에서 편하게 받을 수 있어서 너무 좋아요.<br />
@@ -70,7 +84,7 @@ export default function AsanPage() {
                         <div className="bg-gray-800 rounded-lg p-5 text-white shadow">
                             <div className="flex items-center mb-2">
                                 <span className="font-semibold mr-2">이**</span>
-                                <span className="text-sm text-gray-400">2024.06</span>
+                                <span className="text-sm text-gray-400">2025.07</span>
                             </div>
                             <p>
                                 예약도 간편하고, 맞춤형 케어라서 만족도가 높아요.<br />
@@ -80,16 +94,26 @@ export default function AsanPage() {
                     </div>
                 </section>
 
-                <section>
+                <section className="space-y-10">
                     <MapClient
-                        mapTitle="아산출장마사지"
+                        mapTitle="런투유아산출장마사지"
                         lat={36.78234100341797}
                         lng={127.00052642822266} />
+
+                    <a href="/courses"
+                        className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gray-900 hover:bg-pink-600 transition-colors duration-200 text-white font-semibold text-lg shadow-lg border border-pink-500"
+                        style={{ boxShadow: "0 4px 24px rgba(255, 0, 128, 0.15)" }}
+                    >
+                        <span>코스 가격표 안내</span>
+                        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" className="ml-1">
+                            <path d="M13 5l7 7-7 7M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </a>
                 </section>
 
                 <section className="bg-gray-800 rounded-xl py-12 px-6 max-w-3xl mx-auto mt-12 shadow-lg">
                     <h2 className="text-3xl font-bold text-white mb-6">
-                        아산 24시간 전지역 출장마사지
+                        아산24시간전지역출장마사지
                     </h2>
                     <div className="flex flex-wrap justify-center gap-3">
                         {[
@@ -98,14 +122,14 @@ export default function AsanPage() {
                             "아산출장마사지",
                             "아산홈타이",
                             "아산홈케어",
-                            "아산 후불제 마사지",
-                            "아산 24시 출장마사지",
-                            "아산 20대 관리사 출장",
+                            "아산후불제마사지",
+                            "아산24시출장마사지",
+                            "아산20대관리사출장",
                             "아산콜걸",
-                            "아산 모텔 출장마사지",
-                            "아산 온천동 출장마사지",
-                            "아산 탕정 출장마사지",
-                            "아산 전지역 출장마사지",
+                            "아산모텔출장마사지",
+                            "아산온천동출장마사지",
+                            "아산탕정출장마사지",
+                            "아산전지역출장마사지",
                         ].map((keyword) => (
                             <span
                                 key={keyword}
@@ -149,6 +173,6 @@ const descriptions: {
 
     "section5": {
         title: "오늘, 당신의 공간이 힐링이 되는 곳",
-        content: "마사지가 단순한 ‘손길’이 아닌<br />몸과 마음을 동시에 회복하는 시간이 되어야 한다고 믿습니다.<br /><br />아산 출장마사지는 기술력과 정성을 더해<br />당신의 일상에 따뜻한 쉼을 더합니다.<br /><br />📞 지금 바로 예약하세요 – 몸이 기억하는 힐링, 아산에서 시작됩니다.",
+        content: "마사지가 단순한 ‘손길’이 아닌<br />몸과 마음을 동시에 회복하는 시간이 되어야 한다고 믿습니다.<br /><br />런투유출장마사지는 기술력과 정성을 더해<br />당신의 일상에 따뜻한 쉼을 더합니다.<br /><br />📞 지금 바로 예약하세요 – 몸이 기억하는 힐링, 아산에서 시작됩니다.",
     },
 };

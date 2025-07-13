@@ -55,7 +55,9 @@ export default function MapClient({
                             <h2 className="font-bold">
                                 {mapTitle}
                             </h2>
-                            <p>편안한 힐링을 경험하세요.</p>
+                            <p>
+                                런투유출장마사지에서 편안한 힐링을 경험하세요.
+                            </p>
                             <a
                                 href="https://maps.google.com/?q=36.81377410888672,127.14159393310547"
                                 target="_blank"

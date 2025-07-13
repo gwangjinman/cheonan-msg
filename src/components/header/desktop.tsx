@@ -27,7 +27,7 @@ export default function Desktop({
                         <Link
                             href="/"
                             className="font-medium px-4 hover:bg-gray-200">
-                            천안 출장마사지
+                            천안출장마사지
                         </Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
@@ -35,21 +35,21 @@ export default function Desktop({
                 <NavigationMenuItem>
                     <NavigationLink
                         href="/asan">
-                        아산 출장마사지
+                        아산출장마사지
                     </NavigationLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
                     <NavigationLink
                         href="/cheonan-dongnamgu">
-                        천안 동남구
+                        천안동남구출장마사지
                     </NavigationLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
                     <NavigationLink
                         href="/cheonan-seobukgu">
-                        천안 서북구
+                        천안서북구출장마사지
                     </NavigationLink>
                 </NavigationMenuItem>
 

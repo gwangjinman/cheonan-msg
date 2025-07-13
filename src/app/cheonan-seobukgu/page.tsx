@@ -4,8 +4,8 @@ import Image from "next/image";
 import { Metadata } from "next/types";
 
 export const metadata: Metadata = {
-    title: "천안 성북구 No.1 출장마사지 | 100% 후불제 | 20대 관리사 상시 대기 | 천안 홈케어",
-    description: "천안 출장마사지, 아산 출장마사지, 천안 아로마 마사지, 천안 타이 마사지, 아산 아로마 마사지, 아산 타이 마사지, 천안 24시 마사지, 아산 24시 마사지, 천안 홈타이, 아산 홈타이, 천안 스웨디시, 아산 스웨디시, 천안 마사지 가격, 아산 마사지 가격, 천안 출장 홈케어, 아산 출장 홈케어, 천안 남성전용 마사지, 아산 남성전용 마사지, 20대 관리사",
+    title: "런투유 출장마사지 | 천안서북구출장마사지 | 100% 후불제 | 20대 관리사 상시 대기 | 천안홈케어",
+    description: "런투유 출장마사지는 천안 서북구 전지역(성정동, 백석동, 두정동, 차암동, 불당동 등)에서 24시간 운영되는 프리미엄 홈타이·출장마사지 서비스입니다. 천안출장마사지, 천안홈타이, 천안출장안마, 천안아로마홈케어, 천안힐링케어 등의 서비스를 제공하는 천안 대표 출장마사지 브랜드이며, 20대 전문 관리사들이 고객 맞춤형 케어를 제공합니다.",
 };
 
 export default function SeobukguPage() {
@@ -14,25 +14,38 @@ export default function SeobukguPage() {
             <article className="space-y-32 text-center py-20">
                 <section className="space-y-5">
                     <h1 className="text-4xl font-bold mb-4 text-white">
-                        <span>천안 서북구 출장마사지 | 천안 서북구 연중무휴 출장 안마</span><br />
-                        <span>천안 성정동 20대 관리사 | 100% 후불제</span>
+                        <span>런투유출장마사지 | 천안서북구출장마사지 | 천안서북구 연중무휴 출장안마</span><br />
+                        <span>천안 성정동, 백석동, 두정동 등 20대 관리사 항시 대기 | 100% 후불제</span>
                     </h1>
 
-                    <a href=""
+                    <a href="tel:+821021832567"
                         className="flex items-center justify-center">
-                        <div className="h-56 w-56 bg-pink-400">
-
-                        </div>
+                        <Image
+                            src="/image2.png"
+                            width={400}
+                            height={400}
+                            alt="런투유출장마사지 소개 이미지" />
                     </a>
+
                     <div className="text-white text-center">
                         천안 서북구 전지역 어디든 전화 한 통으로<br />
                         30분내에 20대 전담 관리사님이 방문합니다.<br />
-                        홈케어 독보적 1위 업체로<br />
+                        런투유출장마사지는 홈케어 독보적 1위 업체로<br />
                         성정동, 불당동, 백석동, 두정동 등<br />
                         서북구 전지역 출장 가능합니다.<br />
                         <span className="text-pink-400 font-bold">
                             24시간 언제든지 예약 가능</span>
                     </div>
+
+                    <a href="/courses"
+                        className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gray-900 hover:bg-pink-600 transition-colors duration-200 text-white font-semibold text-lg shadow-lg border border-pink-500"
+                        style={{ boxShadow: "0 4px 24px rgba(255, 0, 128, 0.15)" }}
+                    >
+                        <span>코스 가격표 안내</span>
+                        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" className="ml-1">
+                            <path d="M13 5l7 7-7 7M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </a>
                 </section>
 
                 {Object.keys(descriptions).map((key) => (
@@ -48,7 +61,7 @@ export default function SeobukguPage() {
                 ))}
 
                 <section className="bg-gray-900 rounded-xl py-12 px-6 max-w-2xl mx-auto shadow-lg">
-                    <h2 className="text-3xl font-bold text-white mb-6">실제 이용 후기</h2>
+                    <h2 className="text-3xl font-bold text-white mb-6">런투유출장마사지 리얼 후기</h2>
                     <div className="space-y-6">
                         <div className="bg-gray-800 rounded-lg p-5 text-left">
                             <p className="text-white mb-2">
@@ -71,32 +84,42 @@ export default function SeobukguPage() {
                     </div>
                 </section>
 
-                <section>
+                <section className="space-y-10">
                     <MapClient
-                        mapTitle="천안 서북구 출장마사지"
+                        mapTitle="천안서북구출장마사지"
                         lat={36.892822265625}
                         lng={127.16180419921875} />
+
+                    <a href="/courses"
+                        className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gray-900 hover:bg-pink-600 transition-colors duration-200 text-white font-semibold text-lg shadow-lg border border-pink-500"
+                        style={{ boxShadow: "0 4px 24px rgba(255, 0, 128, 0.15)" }}
+                    >
+                        <span>코스 가격표 안내</span>
+                        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" className="ml-1">
+                            <path d="M13 5l7 7-7 7M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </a>
                 </section>
 
                 <section className="bg-gray-800 rounded-xl py-12 px-6 max-w-3xl mx-auto mt-12 shadow-lg">
                     <h2 className="text-3xl font-bold text-white mb-6">
-                        천안 서북구 24시간 출장 안마
+                        천안서북구24시간출장마사지
                     </h2>
                     <div className="flex flex-wrap justify-center gap-3">
                         {[
-                            "천안 성정동 출장마사지",
-                            "천안 불당동 출장마사지",
-                            "천안 백석동 출장마사지",
-                            "천안 두정동 출장마사지",
-                            "천안 쌍용동 마사지",
-                            "천안 서북구 출장안마",
-                            "천안 20대 관리사",
-                            "천안 한국인 홈타이",
-                            "천안 한국인 홈케어",
-                            "천안 후불제 마사지",
-                            "천안 마사지 잘 하는 곳",
-                            "천안 차암동 출장마사지",
-                            "천안 성성동 출장마사지",
+                            "천안성정동출장마사지",
+                            "천안불당동출장마사지",
+                            "천안백석동출장마사지",
+                            "천안두정동출장마사지",
+                            "천안쌍용동마사지",
+                            "천안서북구출장안마",
+                            "천안20대관리사",
+                            "천안한국인홈타이",
+                            "천안한국인홈케어",
+                            "천안후불제마사지",
+                            "천안마사지잘하는곳",
+                            "천안차암동출장마사지",
+                            "천안성성동출장마사지",
                         ].map((keyword) => (
                             <span
                                 key={keyword}
@@ -125,7 +148,7 @@ const descriptions: {
 
     "section2": {
         title: "🌿 고정된 코스는 NO, 당신만의 맞춤 힐링 YES",
-        content: "서북구 출장마사지 서비스는<br />정해진 루틴이 아닌, 매 순간 고객 상태를 반영한 진짜 맞춤형 관리를 지향합니다.<br />하루 종일 서 있는 고객을 위한 하체 집중 테라피<br />앉아서 근무하는 직장인을 위한 어깨·목 이완 관리<br />수면장애, 스트레스 완화를 위한 아로마 릴랙스 케어",
+        content: "런투유출장마사지 서비스는<br />정해진 루틴이 아닌, 매 순간 고객 상태를 반영한 진짜 맞춤형 관리를 지향합니다.<br />하루 종일 서 있는 고객을 위한 하체 집중 테라피<br />앉아서 근무하는 직장인을 위한 어깨·목 이완 관리<br />수면장애, 스트레스 완화를 위한 아로마 릴랙스 케어",
     },
 
     "section3": {
@@ -140,6 +163,6 @@ const descriptions: {
 
     "section5": {
         title: "오늘 하루의 피로, 서북구 출장마사지가 덜어드립니다.",
-        content: "천안 서북구 출장마사지는<br />단순한 서비스가 아닌, 하루를 회복시키는 고요한 휴식의 시간입니다.<br /><br />내 집에서, 내 방에서,<br />누구의 방해도 받지 않고 오롯이 나에게 집중하는 시간.<br />지금, 그 시간을 시작하세요.<br /><br />📞 지금 바로 예약하고, 내 공간에서 고품격 힐링을 누리세요.",
+        content: "런투유출장마사지 서비스는<br />단순한 서비스가 아닌, 하루를 회복시키는 고요한 휴식의 시간입니다.<br /><br />내 집에서, 내 방에서,<br />누구의 방해도 받지 않고 오롯이 나에게 집중하는 시간.<br />지금, 그 시간을 시작하세요.<br /><br />📞 지금 바로 예약하고, 내 공간에서 고품격 힐링을 누리세요.",
     },
 };

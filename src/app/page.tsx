@@ -4,8 +4,8 @@ import Image from "next/image";
 import { Metadata } from "next/types";
 
 export const metadata: Metadata = {
-    title: "천안 전지역 No.1 출장마사지 | 100% 후불제 | 20대 관리사 상시 대기 | 천안 홈케어",
-    description: "천안 출장마사지, 아산 출장마사지, 천안 아로마 마사지, 천안 타이 마사지, 아산 아로마 마사지, 아산 타이 마사지, 천안 24시 마사지, 아산 24시 마사지, 천안 홈타이, 아산 홈타이, 천안 스웨디시, 아산 스웨디시, 천안 마사지 가격, 아산 마사지 가격, 천안 출장 홈케어, 아산 출장 홈케어, 천안 남성전용 마사지, 아산 남성전용 마사지, 20대 관리사",
+    title: "런투유 출장마사지 | 천안출장마사지 | 100% 후불제 | 20대 관리사 상시 대기 | 천안홈케어",
+    description: "런투유 출장마사지는 천안 전지역(대흥, 두정, 봉명, 불당, 쌍용, 신부 등)에서 24시간 운영되는 프리미엄 홈타이·출장마사지 서비스입니다. 천안출장마사지, 천안홈타이, 천안출장안마, 천안아로마홈케어, 천안힐링케어 등의 서비스를 제공하는 천안 대표 출장마사지 브랜드이며, 20대 전문 관리사들이 고객 맞춤형 케어를 제공합니다.",
 };
 
 export default function Home() {
@@ -14,20 +14,33 @@ export default function Home() {
             <article className="space-y-32 text-center py-20">
                 <section className="space-y-5">
                     <h1 className="text-4xl font-bold mb-4 text-white">
-                        천안 출장마사지 - 품격 있는 힐링, 집에서 만나는 편안함<br />
-                        천안 출장안마 NO.1 천안 출장 100% 후불제
+                        런투유출장마사지 | 천안출장마사지 | 천안24시간출장안마<br />
+                        천안출장안마 NO.1 브랜드 / 천안출장마사지 100% 후불제
                     </h1>
 
-                    <a href=""
+                    <a href="tel:+821021832567"
                         className="flex items-center justify-center">
-                        <div className="h-56 w-56 bg-pink-400">
-
-                        </div>
+                            <Image
+                            src="/image1.png"
+                            width={400}
+                            height={400}
+                            alt="런투유출장마사지 소개 이미지" />
                     </a>
+                    
                     <div className="text-white text-center">
                         하루의 피로가 무겁게 쌓인 날, 몸과 마음이 모두 지쳤을 때, 굳이 멀리 갈 필요 없습니다.<br />
-                        천안 전역 출장 전문 마사지 서비스로 당신의 공간이 곧 힐링 스팟이 됩니다.
+                        천안 전지역 어디서든 런투유출장마사지가 당신의 공간으로 찾아갑니다.<br />
                     </div>
+
+                    <a href="/courses"
+                        className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gray-900 hover:bg-pink-600 transition-colors duration-200 text-white font-semibold text-lg shadow-lg border border-pink-500"
+                        style={{ boxShadow: "0 4px 24px rgba(255, 0, 128, 0.15)" }}
+                    >
+                        <span>코스 가격표 안내</span>
+                        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" className="ml-1">
+                            <path d="M13 5l7 7-7 7M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </a>
                 </section>
 
                 {Object.keys(descriptions).map((key) => (
@@ -47,7 +60,7 @@ export default function Home() {
                         <div className="bg-white rounded-full flex flex-col items-center justify-center w-60 h-60 p-8">
                             <span className="text-3xl mb-4">💆‍♀️</span>
                             <h3 className="text-xl font-semibold mb-2 text-gray-800">찐후기</h3>
-                            <p className="text-gray-600 text-center text-sm">두 번째 이용인데 역시나 만족스럽네요. 말하지 않아도 제 상태를 캐치해주셔서 놀랐습니다.</p>
+                            <p className="text-gray-600 text-center text-sm">두 번째 이용인데 역시나 만족스럽네요. 말하지 않아도 제 상태를 캐치해 주셔서 놀랐습니다.</p>
                         </div>
                         <div className="bg-white rounded-full flex flex-col items-center justify-center w-60 h-60 p-8">
                             <span className="text-3xl mb-4">🏠</span>
@@ -62,32 +75,43 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section>
+                <section className="space-y-10">
                     <MapClient
-                    mapTitle="천안 출장마사지"
-                    lat={36.81377410888672}
-                    lng={127.14159393310547} />
+                        mapTitle="런투유천안출장마사지"
+                        lat={36.81377410888672}
+                        lng={127.14159393310547} />
+
+                        <a href="/courses"
+                        className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gray-900 hover:bg-pink-600 transition-colors duration-200 text-white font-semibold text-lg shadow-lg border border-pink-500"
+                        style={{ boxShadow: "0 4px 24px rgba(255, 0, 128, 0.15)" }}
+                    >
+                        <span>코스 가격표 안내</span>
+                        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" className="ml-1">
+                            <path d="M13 5l7 7-7 7M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </a>
                 </section>
+                
 
                 <section className="bg-gray-800 rounded-xl py-12 px-6 max-w-3xl mx-auto mt-12 shadow-lg">
                     <h2 className="text-3xl font-bold text-white mb-6">
-                        천안 전지역 24시간 출장마사지
+                        천안전지역24시간출장마사지
                     </h2>
                     <div className="flex flex-wrap justify-center gap-3">
                         {[
-                            "천안 홈타이",
-                            "천안 출장마사지",
-                            "천안 출장안마",
-                            "천안 아로마 홈타이",
-                            "천안 힐링케어",
-                            "천안 한국인 홈케어",
-                            "천안 후불제 마사지",
-                            "천안 성정동 출장마사지",
-                            "천안 두정동 출장마사지",
-                            "천안 쌍용동 출장마사지",
-                            "천안 백석동 출장마사지",
-                            "천안 불당동 출장마사지",
-                            "천안 오룡동 출장마사지",
+                            "천안홈타이",
+                            "천안출장마사지",
+                            "천안출장안마",
+                            "천안아로마 홈타이",
+                            "천안힐링케어",
+                            "천안한국인홈케어",
+                            "천안후불제마사지",
+                            "천안성정동출장마사지",
+                            "천안두정동출장마사지",
+                            "천안쌍용동출장마사지",
+                            "천안백석동출장마사지",
+                            "천안불당동출장마사지",
+                            "천안오룡동출장마사지",
                         ].map((keyword) => (
                             <span
                                 key={keyword}
@@ -130,7 +154,7 @@ const descriptions: {
     },
 
     "section5": {
-        title: "당신만의 힐링, 오늘 천안에서 시작하세요.",
-        content: "프리미엄 출장 테라피를 이제 부담 없이 집, 숙소, 사무실 어디에서든 받아보세요.<br />경험해보면 압니다.<br />내 공간에서 받는 진짜 힐링이 얼마나 특별한지.<br /> 지금 예약하세요 – 천안 출장마사지의 새로운 기준이 되어드리겠습니다."
+        title: "당신만의 힐링, 오늘 런투유출장마사지에서 시작하세요.",
+        content: "프리미엄 출장 테라피를 이제 부담 없이 집, 숙소, 사무실 어디에서든 받아보세요.<br />경험해보면 압니다.<br />내 공간에서 받는 진짜 힐링이 얼마나 특별한지.<br /><br />지금 예약하세요.<br />천안출장마사지의 새로운 기준이 되어드리겠습니다."
     },
 };

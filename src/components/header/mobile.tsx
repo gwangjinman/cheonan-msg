@@ -42,7 +42,7 @@ export default function Mobile({
                                 <MobileLink
                                     href="/"
                                     onClick={reset}>
-                                    천안 출장마사지
+                                    천안출장마사지
                                 </MobileLink>
                             </li>
 
@@ -50,7 +50,7 @@ export default function Mobile({
                                 <MobileLink
                                     href="/asan"
                                     onClick={reset}>
-                                    아산 출장마사지
+                                    아산출장마사지
                                 </MobileLink>
                             </li>
 
@@ -58,7 +58,7 @@ export default function Mobile({
                                 <MobileLink
                                     href="/cheonan-dongnamgu"
                                     onClick={reset}>
-                                    천안 동남구 출장마사지
+                                    천안동남구출장마사지
                                 </MobileLink>
                             </li>
 
@@ -66,7 +66,7 @@ export default function Mobile({
                                 <MobileLink
                                     href="/cheonan-seobukgu"
                                     onClick={reset}>
-                                    천안 서북구 출장마사지
+                                    천안서북구출장마사지
                                 </MobileLink>
                             </li>
 

@@ -27,6 +27,7 @@ export async function loginAction(
     const payload = { id };
     const token = jwt.sign(payload, process.env.JWT_SECRET!, {
         expiresIn: "720h",
+        
     });
     const cookieStore = await cookies();
     cookieStore.set("token", token, {
