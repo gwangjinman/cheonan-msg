@@ -9,7 +9,7 @@ export default function Header({
     loggedIn,
 }: HeaderProps) {
     return (
-        <div className="h-18 flex items-center justify-between md:justify-center">
+        <div className="h-18 flex items-center justify-between lg:justify-center">
             <a href="/"
                 className="px-5
                 text-2xl font-extrabold text-transparent
@@ -20,11 +20,11 @@ export default function Header({
                 런투유 출장마사지
             </a>
 
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
                 <Desktop
                     loggedIn={loggedIn} />
             </div>
-            <div className="md:hidden">
+            <div className="lg:hidden">
                 <Mobile
                     loggedIn={loggedIn} />
             </div>

@@ -35,9 +35,10 @@ export default async function RootLayout({
                         {children}
                     </main>
 
-                    <footer className="py-5 border-t border-gray-800
-                    flex items-center justify-center gap-5 text-white
-                    sticky bottom-0 w-full bg-gray-900">
+                    <footer className="py-5 px-3 border-t border-gray-800
+                    flex items-center min-[450px]:justify-center gap-5
+                    text-white sticky bottom-0 w-full bg-gray-900 overflow-x-auto
+                    text-nowrap">
                         <a href="#">
                             <div className="p-3 bg-blue-800 rounded-lg
                             hover:bg-blue-700 transition-colors">
