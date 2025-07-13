@@ -2,6 +2,8 @@ import { Noto_Sans_KR } from "next/font/google";
 import { cookies } from "next/headers";
 import Header from "../components/header/header";
 import "./globals.css";
+import QRDialog from "./qr-dialog";
+import { Button } from "../components/ui/button";
 
 const noto = Noto_Sans_KR({ subsets: ["latin"] });
 
@@ -39,25 +41,28 @@ export default async function RootLayout({
                     flex items-center min-[450px]:justify-center gap-5
                     text-white sticky bottom-0 w-full bg-gray-900 overflow-x-auto
                     text-nowrap">
-                        <a href="#">
-                            <div className="p-3 bg-blue-800 rounded-lg
+                        <Button
+                            asChild
+                            className="p-6 bg-blue-800 rounded-lg
                             hover:bg-blue-700 transition-colors">
-                                카톡 아이디: opoo111
-                            </div>
-                        </a>
-                        <a target="_blank" rel="noopener noreferrer"
-                            href="https://t.me/opoo111">
-                            <div className="p-3 bg-blue-800 rounded-lg
+                            <a href="tel:+821021832567">
+                                <div>
+                                    전화 예약
+                                </div>
+                            </a>
+                        </Button>
+                        <Button
+                            asChild
+                            className="p-6 bg-blue-800 rounded-lg
                             hover:bg-blue-700 transition-colors">
-                                텔레그램 예약
-                            </div>
-                        </a>
-                        <a href="tel:+821021832567">
-                            <div className="p-3 bg-blue-800 rounded-lg
-                            hover:bg-blue-700 transition-colors">
-                                전화 예약
-                            </div>
-                        </a>
+                            <a target="_blank" rel="noopener noreferrer"
+                                href="https://t.me/opoo111">
+                                <div>
+                                    텔레그램 예약
+                                </div>
+                            </a>
+                        </Button>
+                        <QRDialog />
                     </footer>
                 </div>
             </body>

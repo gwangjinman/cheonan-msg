@@ -7,9 +7,7 @@ import {
     NavigationMenuList
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
-import { Button } from "../ui/button";
 import { redirect, usePathname, useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
 
 type DesktopProps = {
     loggedIn: boolean;
