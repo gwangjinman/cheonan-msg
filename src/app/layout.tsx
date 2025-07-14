@@ -45,12 +45,13 @@ export default async function RootLayout({
                             asChild
                             className="p-6 bg-blue-800 rounded-lg
                             hover:bg-blue-700 transition-colors">
-                            <a href="tel:+821021832567">
+                            <a href="tel:01021832567">
                                 <div>
                                     전화 예약
                                 </div>
                             </a>
                         </Button>
+
                         <Button
                             asChild
                             className="p-6 bg-blue-800 rounded-lg
@@ -62,7 +63,19 @@ export default async function RootLayout({
                                 </div>
                             </a>
                         </Button>
-                        <QRDialog />
+
+                        <Button
+                            asChild
+                            className="p-6 bg-blue-800 rounded-lg
+                            hover:bg-blue-700 transition-colors">
+                            <a target="_blank" rel="noopener noreferrer"
+                                href="http://qr.kakao.com/talk/oc7O_jTuOfo8vtIEZSmiBL8vVuc-">
+                                <div>
+                                    카톡 아이디: opoo111
+                                </div>
+                            </a>
+                        </Button>
+                        {/* <QRDialog /> */}
                     </footer>
                 </div>
             </body>

@@ -18,7 +18,7 @@ export default function Home() {
                         천안출장안마 NO.1 브랜드 / 천안출장마사지 100% 후불제
                     </h1>
 
-                    <a href="tel:+821021832567"
+                    <a href="tel:01021832567"
                         className="flex items-center justify-center">
                             <Image
                             src="/image1.png"

@@ -18,7 +18,7 @@ export default function AsanPage() {
                         <span>아산 국내 20대 관리사 | 100% 후불제</span>
                     </h1>
 
-                    <a href="tel:+821021832567"
+                    <a href="tel:01021832567"
                         className="flex items-center justify-center">
                         <Image
                             src="/image2.png"

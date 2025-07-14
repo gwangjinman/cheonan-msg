@@ -18,7 +18,7 @@ export default function SeobukguPage() {
                         <span>천안 성정동, 백석동, 두정동 등 20대 관리사 항시 대기 | 100% 후불제</span>
                     </h1>
 
-                    <a href="tel:+821021832567"
+                    <a href="tel:01021832567"
                         className="flex items-center justify-center">
                         <Image
                             src="/image2.png"

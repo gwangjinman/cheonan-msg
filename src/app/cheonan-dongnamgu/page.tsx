@@ -18,7 +18,7 @@ export default function DongnamguPage() {
                         <span>천안20대관리사 | 100% 후불제</span>
                     </h1>
 
-                    <a href="tel:+821021832567"
+                    <a href="tel:01021832567"
                         className="flex items-center justify-center">
                         <Image
                             src="/image1.png"

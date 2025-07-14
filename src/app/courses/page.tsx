@@ -29,7 +29,7 @@ export default function CoursesPage() {
 
                     <address className="flex flex-col items-center gap-2">
                         <strong>
-                            <a href="tel:+821021832567" className="text-pink-500">예약 문의: 010-2183-2567</a>
+                            <a href="tel:01021832567" className="text-pink-500">예약 문의: 010-2183-2567</a>
                         </strong>
                         <strong>
                             <a href="https://t.me/opoo111"
@@ -53,7 +53,7 @@ export default function CoursesPage() {
                 ))}
             </div>
 
-            <a href="tel:+821021832567"
+            <a href="tel:01021832567"
                 className="flex items-center justify-center">
                 <Image
                     src="/image2.png"

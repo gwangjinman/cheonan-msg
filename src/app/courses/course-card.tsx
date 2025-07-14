@@ -56,7 +56,7 @@ export default function CourseCard({
                 <Button
                     className="grow"
                     asChild>
-                    <a href="tel:+821021832567">
+                    <a href="tel:01021832567">
                         예약하기
                     </a>
                 </Button>
