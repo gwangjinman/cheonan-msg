@@ -69,7 +69,7 @@ export default async function RootLayout({
                             className="p-6 bg-blue-800 rounded-lg
                             hover:bg-blue-700 transition-colors">
                             <a target="_blank" rel="noopener noreferrer"
-                                href="http://qr.kakao.com/talk/oc7O_jTuOfo8vtIEZSmiBL8vVuc-">
+                                href="http://qr.kakao.com/talk/rW03Jub33A0amG8xD8E58.2nuIA-">
                                 <div>
                                     카톡 아이디: opoo111
                                 </div>
