@@ -25,7 +25,9 @@ export default async function RootLayout({
                 <link rel="icon" href="/android-chrome-192x192.png" sizes="192x192" />
                 <link rel="icon" href="/android-chrome-512x512.png" sizes="512x512" />
                 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
-                <Script type="application/ld+json">
+                <Script
+                type="application/ld+json"
+                strategy="beforeInteractive">
                     {`
                         "@context": "https://schema.org",
                         "@type": "WebSite",
