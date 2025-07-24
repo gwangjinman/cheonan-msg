@@ -4,6 +4,7 @@ import Header from "../components/header/header";
 import "./globals.css";
 import QRDialog from "./qr-dialog";
 import { Button } from "../components/ui/button";
+import Script from "next/script";
 
 const noto = Noto_Sans_KR({ subsets: ["latin"] });
 
@@ -24,6 +25,16 @@ export default async function RootLayout({
                 <link rel="icon" href="/android-chrome-192x192.png" sizes="192x192" />
                 <link rel="icon" href="/android-chrome-512x512.png" sizes="512x512" />
                 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+                <Script type="application/ld+json">
+                    {`
+                        "@context": "https://schema.org",
+                        "@type": "WebSite",
+                        "url": "https://www.cheonan-msg.kr/",
+                        "name": "런투유출장마사지",
+                        "alternateName": "RunToYou Massage",
+                        "description": "천안 전지역에서 24시간 운영되는 런투유출장마사지 서비스입니다. 20대 전문 관리사들이 고객 맞춤형 케어를 제공합니다.",
+                    `}
+                </Script>
             </head>
 
             <body className={`${noto.className} antialiased bg-[#010203]`}>
