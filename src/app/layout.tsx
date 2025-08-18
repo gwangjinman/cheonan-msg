@@ -36,6 +36,8 @@ export default async function RootLayout({
                 <link rel="icon" href="/android-chrome-512x512.png" sizes="512x512" />
                 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
                 <Script
+                type="application/ld+json"
+                strategy="beforeInteractive"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify(jsonLd),
                 }} />
