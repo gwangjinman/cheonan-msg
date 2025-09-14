@@ -81,7 +81,7 @@ export default async function RootLayout({
                             </a>
                         </Button>
 
-                        {/* <Button
+                        <Button
                             asChild
                             className="p-6 bg-blue-800 rounded-lg
                             hover:bg-blue-700 transition-colors">
@@ -91,7 +91,7 @@ export default async function RootLayout({
                                     카톡 아이디: opoo111
                                 </div>
                             </a>
-                        </Button> */}
+                        </Button>
                         {/* <QRDialog /> */}
                     </footer>
                 </div>
