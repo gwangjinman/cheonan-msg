@@ -88,7 +88,7 @@ export default async function RootLayout({
                             <a target="_blank" rel="noopener noreferrer"
                                 href="http://qr.kakao.com/talk/rW03Jub33A0amG8xD8E58.2nuIA-">
                                 <div>
-                                    카톡 아이디: opoo111
+                                    카톡 예약
                                 </div>
                             </a>
                         </Button>
