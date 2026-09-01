@@ -1,4 +1,3 @@
-import Head from "@/components/head";
 import MapClient from "@/components/map-client";
 import Image from "next/image";
 import { Metadata } from "next/types";
