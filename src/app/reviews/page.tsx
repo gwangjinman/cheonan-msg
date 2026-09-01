@@ -8,6 +8,9 @@ import { Metadata } from "next/types";
 export const metadata: Metadata = {
     title: "천안/아산 No.1 출장마사지 후기 모음 | 천안 홈케어 | 아산 홈케어 | 100% 후불제",
     description: "런투유 출장마사지 고객들의 리얼한 후기와 요청을 확인해 보세요. 천안출장마사지, 아산출장마사지, 천안아로마마사지, 천안타이마사지, 아산아로마마사지, 아산타이마사지, 천안24시간출장안마, 아산24시출장안마, 천안홈타이, 아산홈타이, 천안스웨디시, 아산스웨디시, 천안출장마사지가격, 아산마사지가격",
+    alternates: {
+        canonical: "https://www.cheonan-msg.kr/reviews",
+    },
 };
 
 type ReviewPageProps = {

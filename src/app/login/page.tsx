@@ -2,6 +2,11 @@
 
 import React, { useActionState, useEffect, useState } from "react";
 import { loginAction } from './action';
+import { type Metadata } from "next";
+
+export const metadata: Metadata = {
+    robots: "noindex, nofollow",
+};
 
 export default function LoginPage() {
     const [adminName, setAdminName] = useState('');

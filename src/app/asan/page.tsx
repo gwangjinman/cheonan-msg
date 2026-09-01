@@ -6,6 +6,9 @@ import { Metadata } from "next/types";
 export const metadata: Metadata = {
     title: "런투유출장마사지 | 아산출장마사지 | 100% 후불제 | 20대 관리사 상시 대기 | 아산홈케어",
     description: "런투유 출장마사지는 아산 전지역(온천, 신창, 용화, 배방, 탕정 등)에서 24시간 운영되는 프리미엄 홈타이·출장마사지 서비스입니다. 아산출장마사지, 아산홈타이, 아산출장안마, 아산아로마홈케어, 아산힐링케어 등의 서비스를 제공하는 아산 대표 출장마사지 브랜드이며, 20대 전문 관리사들이 고객 맞춤형 케어를 제공합니다.",
+    alternates: {
+        canonical: "https://www.cheonan-msg.kr/asan",
+    },
 };
 
 export default function AsanPage() {

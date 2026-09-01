@@ -6,6 +6,9 @@ import Image from "next/image";
 export const metadata: Metadata = {
     title: "런투유 출장마사지 코스 가격표 안내",
     description: "천안/아산 전지역 런투유 출장마사지 코스 안내 및 가격표 페이지입니다. 합리적인 가격으로 다양한 마사지 코스를 제공합니다. 20대 전문 관리사들이 제공하는 프리미엄 홈케어 서비스로, 100% 후불제로 안전하게 이용할 수 있습니다. 24시간 언제든지 예약 가능하니 편안하게 힐링을 경험해 보세요.",
+    alternates: {
+        canonical: "https://www.cheonan-msg.kr/courses",
+    },
 };
 
 export default function CoursesPage() {
