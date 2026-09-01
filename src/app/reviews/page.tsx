@@ -1,9 +1,8 @@
-import { Suspense } from "react";
-import ReviewForm from "./review-form";
-import ReviewList from "./review-list";
-import { getReviews } from "./actions";
 import { cookies } from "next/headers";
 import { Metadata } from "next/types";
+import { getReviews } from "./actions";
+import ReviewForm from "./review-form";
+import ReviewList from "./review-list";
 
 export const metadata: Metadata = {
     title: "천안/아산 No.1 출장마사지 후기 모음 | 천안 홈케어 | 아산 홈케어 | 100% 후불제",
